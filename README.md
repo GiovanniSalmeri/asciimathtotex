@@ -4,7 +4,7 @@ Convert AsciiMath to TeX.
 
 ## Purpose
 
-This PHP class converts [AsciiMath]http://asciimath.org/() expressions in TeX expressions. In this way [KaTeX](https://katex.org/) (which is much lighter and much faster than MathJax) can be used to render AsciiMath.
+This PHP class converts [AsciiMath](http://asciimath.org/) expressions in TeX expressions. In this way [KaTeX](https://katex.org/) (which is much lighter and much faster than MathJax) can be used to render AsciiMath.
 
 PHP >= 7.0 is required.
 
