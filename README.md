@@ -2,25 +2,30 @@
 
 Convert AsciiMath to TeX.
 
-## Purpose
+## Introduction
 
 This PHP class converts [AsciiMath](http://asciimath.org/) expressions in TeX expressions. In this way [KaTeX](https://katex.org/) (which is much lighter and much faster than MathJax) can be used to render AsciiMath.
 
 PHP >= 7.0 is required.
 
-## Methods
+## Class synopsis
 
-The class `AsciiMathToTex` gives access to the API. The following method is available:
+```php
+class AsciiMathToTex {
 
-`parse($asciimath): string`  
-Convert an AsciiMath expression in a TeX expression
+    /* Methods */
+    public __construct(string $decimalsign = ".")
+    public parse(string $asciimath): string
+
+}
+```
 
 ## Example
 
 ```php
 require "asciimathtotex.php";
 
-$parser = new AsciiMathToTex("."); // the argument is the decimal sign
+$parser = new AsciiMathToTex();
 $asciimath = "x=(-b+-sqrt(b^2-4ac))/(2a)";
 $tex = $parser->parse($asciimath);
 ```
