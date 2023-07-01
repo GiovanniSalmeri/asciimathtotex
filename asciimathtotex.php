@@ -207,7 +207,7 @@ class AsciiMathToTex {
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-    public function __construct($decimal) {
+    public function __construct($decimal = ".") {
         $this->decimalsign = $decimal;
         $this->setup_symbols();
         $this->sort_symbols();
